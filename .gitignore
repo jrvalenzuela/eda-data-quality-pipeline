@@ -1,0 +1,39 @@
+# Entornos virtuales y Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# Cachés de herramientas y tests
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Secretos y configuración local
+.env
+.env.*
+!.env.example
+
+# Datos (reproducibles por script, nunca versionar datasets en Git)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Reportes generados localmente
+reports/*
+!reports/.gitkeep
+
+# Sistema operativo / IDE / logs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
